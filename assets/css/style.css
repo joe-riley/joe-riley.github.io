@@ -63,12 +63,8 @@ header nav ul li a {
 .my_information {
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-    gap: 0;
-    grid-auto-flow: dense
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .my_information article {
@@ -77,4 +73,27 @@ header nav ul li a {
     align-items: center;
     font-size: 35px;
     background-color: #8db992;
+}
+
+.my_info_item h2 {
+    display: flex;
+    width: 25%;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.my_info_item .article_content {
+    margin: 0;
+    border-left: 4px solid #660066;
+    width: 100%;
+    font-size: small;
+}
+
+.article_content a {
+    margin: 1.75em;
+    padding: 5px;
+    text-decoration: none;
+    color: #660066;
+    font-weight: lighter;
+    font-size: 1.55vw;
 }
